@@ -87,7 +87,17 @@ python3 main.py --profile=ppo_cnn -el_app_freq_train=dddhh --el_ap_freq_valid=hh
 python3 main.py --profile=ppo_cnn -el_app_freq_train=fffqq --el_ap_freq_valid=qqqff  # easy(x4) -> hard(x4)
 ```
 
-### Citation
+## Acknowledgements
+
+This repository is based on the following resources:
+1. CrafterOOD environments are created by forking and adapting the coder from https://github.com/danijar/crafter.
+2. Object centric agents were implemented in stable-baselines3 codebase, by forking it and adapting from https://github.com/DLR-RM/stable-baselines3.
+3. The recurrent agents were ported and adapted from the contrib repository of stable-baselines3: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib.
+4. Arguments, logger, and training helper are adapted from: https://github.com/RobertCsordas/modules.
+
+
+
+## Citation
 
 Please cite our paper if you use our code or if you re-implement our method:
 
