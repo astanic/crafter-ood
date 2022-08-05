@@ -43,7 +43,10 @@ For a run without the scoreboard rendered run:
 python3 main.py --profile=ppo_cnn -crf.render_scoreboard=False
 ```
 
-To evaluate a PPO CNN agent (change profile argument for other agents) in different CrafterOODapp environments run
+To evaluate a PPO CNN agent (change `profile` argument for other agents) in different CrafterOODapp environments (Table 4) run the commands below.
+Explanation: the comma-separated string contains four numbers, representing the probablities of each of the four object variants appearing in the map.
+For example, 88,4,4,4 means that the first object variant appears with 88% probability, and all the other objects with 4% probability.
+Note that the validation environment always contains only the last three object, with equal likelihood of appearance.
 ``` bash
 python3 main.py --profile=ppo_cnn --el_vars=tczsuk --el_freq_train=25,25,25,25 --el_freq_valid=0,33,33,34
 python3 main.py --profile=ppo_cnn --el_vars=tczsuk --el_freq_train=52,16,16,16 --el_freq_valid=0,33,33,34
@@ -54,7 +57,9 @@ python3 main.py --profile=ppo_cnn --el_vars=tczsuk --el_freq_train=97,1,1,1 --el
 python3 main.py --profile=ppo_cnn --el_vars=tczsuk --el_freq_train=100,0,0,0 --el_freq_valid=0,33,33,34
 ```
 
-To evaluate a PPO CNN agent (change profile argument for other agents) in different CrafterOODnum environments run:
+To evaluate a PPO CNN agent (change profile argument for other agents) in different CrafterOODnum environments (Table 6) run the commands showm below.
+Explanation: the string specifies the number of objects - `f`=4x, `d`=2x, `s`=1x, `h`=1/2, `q`=1/4. 
+The 5-length string specifies the relative increase (f,d) or decrease (h,q) in the number of following objects: tree, coal, cow, zombie, skeleton (in this exact order).
 ``` bash
 python3 main.py --profile=ppo_cnn -el_app_freq_train=dddhh --el_ap_freq_valid=sssss  # easy(x2)->default
 python3 main.py --profile=ppo_cnn -el_app_freq_train=fffqq --el_ap_freq_valid=sssss  # easy(x4)->default
@@ -65,8 +70,6 @@ python3 main.py --profile=ppo_cnn -el_app_freq_train=sssss --el_ap_freq_valid=ff
 python3 main.py --profile=ppo_cnn -el_app_freq_train=dddhh --el_ap_freq_valid=hhhdd  # easy(x2)->hard(x2)
 python3 main.py --profile=ppo_cnn -el_app_freq_train=fffqq --el_ap_freq_valid=qqqff  # easy(x4)->hard(x4)
 ```
-Explanation: the string specifies the number of objects - `f`=4x, `d`=2x, `s`=1x, `h`=1/2, `q`=1/4. 
-The 5-length string specifies the relative increase (f,d) or decrease (h,q) in the number of following objects: tree, coal, cow, zombie, skeleton (in this exact order).
 
 ### Citation
 
