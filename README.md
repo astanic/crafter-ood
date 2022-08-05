@@ -4,7 +4,7 @@
   <a href="https://astanic.github.io/" target="_blank">Aleksandar&nbsp;Stanić</a> &emsp;
   <a href="https://twitter.com/yujin_tang" target="_blank">Yujin&nbsp;Tang</a> &emsp;
   <a href="https://twitter.com/hardmaru" target="_blank">David&nbsp;Ha</a> &emsp;
-  <a href="https://people.idsia.ch/~juergen/" target="_blank">Jürgen&nbsp;M.&nbsp;Schmidhuber</a>
+  <a href="https://people.idsia.ch/~juergen/" target="_blank">Jürgen&nbsp;Schmidhuber</a>
 </div>
 <br>
 <br>
