@@ -91,6 +91,20 @@ class World:
         self.total_dreamer = total_dreamer
         if el_app_freq is None:
             el_app_freq = 'sssss'
+        else:
+            if el_app_freq == 'easyX2':
+                el_app_freq = 'dddhh'
+            elif el_app_freq == 'easyX4':
+                el_app_freq = 'fffqq'
+            elif el_app_freq == 'default':
+                el_app_freq = 'sssss'
+            elif el_app_freq == 'mix':
+                el_app_freq = 'fffff'
+            elif el_app_freq == 'hardX2':
+                el_app_freq = 'hhhdd'
+            elif el_app_freq == 'hardX4':
+                el_app_freq = 'qqqff'
+
         self.el_app_freq = el_app_freq
         freq_dict_tree = {
             'q': 0.945, # 50
