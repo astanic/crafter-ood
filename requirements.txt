@@ -1,22 +1,23 @@
-pip3 install torch==1.10.2+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
-pip3 install torchvision --no-dependencies
-pip3 install Pillow
-pip3 install numpy
-pip3 install tqdm
-pip3 install ruamel.yaml
-pip3 install imageio
-pip3 install opensimplex
-pip3 install gym==0.19.0
-pip3 install pandas
-pip3 install matplotlib
-pip3 install wandb
-pip3 install sklearn
-pip3 install opencv-python
-pip3 install h5py
-pip3 install pycocotools
-pip3 install imageio-ffmpeg
-pip3 install procgen
-pip3 install pfrl
-pip3 install tensorboard --no-dependencies
-pip3 install einops
-pip3 install moviepy
+--extra-index-url https://download.pytorch.org/whl/cu113/
+torch==1.10.2+cu113
+torchvision
+Pillow
+numpy
+tqdm
+ruamel.yaml
+imageio
+opensimplex
+gym==0.19.0
+pandas
+matplotlib
+wandb
+sklearn
+opencv-python
+h5py
+pycocotools
+imageio-ffmpeg
+procgen
+pfrl
+tensorboard
+einops
+moviepy
