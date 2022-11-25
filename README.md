@@ -9,7 +9,7 @@
 <br>
 <br>
 
-Paper link: TODO
+Paper link: https://arxiv.org/abs/2208.03374
 
 <div align="center">
 <img src="./figs/01-202-crafting-weapons.png" width="100%">
